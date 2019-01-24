@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Computer Science Trivia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container h-100 d-flex">
+        <!--GAME VIEW -->
+        <div class="jumbotron my-auto game-view" id="jumbotron-center">
+            <h1 class="display-5">Trivia: Computer Science</h1>
+            <hr class="mb-3">
+            <div class="d-flex justify-content-center" id="timer">
+                <h3 class="hidden" id="clock">Time Remaining: <span id="time-remaining">30</span></h3>
+                <h3 class="hidden" id="next-question-clock">Time Remaining: <span id="time-remaining">30</span></h3>
+            </div>
+            <button type="button" class="btn btn-light btn-lg btn-block" id="start-btn">Start</button>
+            <hr class="mb-3">
+            <p class="lead" id="question-text"></p>
+            <div class="" id="correct-text">
+            </div>
+            <div class="list-group answer-group"></div>
+        </div>
+
+        <!-- RESULTS VIEW -->
+        <div class="jumbotron my-auto results-view hidden" id="jumbotron-center">
+            <h1 class="display-5">GAME OVER</h1>
+            <hr class="mb-3">
+            <div class="" id="results">
+                <h3 class="hidden results-view">Correct Answers: <span id="right-answers"></span></h3><br>
+                <h3 class="hidden results-view">Incorrect Answers: <span id="wrong-answers"></span></h3>
+            </div>
+            <hr class="mb-3">
+            <button type="button" class="btn btn-light btn-lg btn-block" id="new-game-btn">New Game</button>
+            <hr class="mb-3">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script src="./assets/javascript/app.js"></script>
+
+</body>
+
+</html>
